@@ -9,6 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreTest", "CoreTest\CoreTe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A36496B0-0D4A-4D92-8AA4-CDD5755E629E}"
 	ProjectSection(SolutionItems) = preProject
+		DatabaseSchemaReader\bin\Debug.zip = DatabaseSchemaReader\bin\Debug.zip
 		global.json = global.json
 		..\ReadMe.md = ..\ReadMe.md
 	EndProjectSection
