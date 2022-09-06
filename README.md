@@ -44,6 +44,23 @@ For .Net Core, we support SqlServer, SqlServer CE 4, SQLite, PostgreSql, MySQL a
 
 Denormalised, meta-meta, inheritance and NoSQL databases.
 
+## Connection String examples
+
+PostgresQL:
+Server=host;Port=5432;User Id=username;Password=secret;Database=databasename;
+
+SQLServer:
+Server=.;Database=databasename;Integrated Security=True;
+
+## Known Error:
+
+Running the application you get the error:
+
+Severity	Code	Description	Project	File	Line	Suppression State
+Error	MSB3644	The reference assemblies for .NETFramework,Version=v4.0 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application. You can download .NET Framework Developer Packs at https://aka.ms/msbuild/developerpacks	DatabaseSchemaReader	C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets	1220	
+
+Copy the DLLs in the Debug folder to the DatabaseSchemaReader\bin\Debug\ folder. Then just run project with the Viewer set as StartUp Project.
+
 ## To Do
 
 * Add Update functionaity
